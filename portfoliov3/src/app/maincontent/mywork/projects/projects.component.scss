@@ -1,0 +1,188 @@
+@import '../../../../styles.scss';
+
+.contant {
+    width: 919px;
+    height: 560px;
+    background: #b5e93b3a;
+    border-radius: 30px;
+    @include dFlex($js: flex-start, $ai: center, $g: 0px);
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    >.top {
+        @include dFlex($js: flex-start, $ai: center, $g: 30px);
+        width: 100%;
+
+        .top_contant {
+            @include dFlex($js: flex-start, $ai: center, $g: 30px);
+
+            >.number {
+                font-size: 100px;
+                font-weight: 700;
+                -webkit-text-stroke: 1px #B5E93B;
+                color: rgba(255, 255, 255, 0);
+            }
+
+            >.headline {
+                font-size: 54px;
+                color: $prime;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .container {
+        @include dFlex($js: space-between, $ai: flex-start, $g: 30px);
+        width: 100%;
+    }
+
+    >.mid {
+        @include dFlex($js: flex-start, $ai: center, $g: 30px);
+
+        >.text_left {
+
+            >ul {
+                list-style-type: circle;
+                list-style: circle;
+                color: #B5E93B;
+            }
+        }
+    }
+}
+
+.title {
+    color: white;
+    font-size: 24px;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+    width: 366px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.point {
+    border-radius: 50px;
+    color: #B5E93B;
+    border: 1px solid;
+    height: 10px;
+    width: 10px;
+    margin-top: 10px;
+}
+
+.main_text {
+    @include dFlex($js: flex-start, $ai: flex-start, $g: 13px);
+}
+
+.headline {
+    @include dFlex($js: flex-start, $ai: flex-start, $g: 10px);
+    flex-direction: column;
+}
+
+.myButton {
+    background-color: #44c76700;
+    border-radius: 30px;
+    border: 1px solid $prime;
+    display: inline-block;
+    cursor: pointer;
+    color: $prime;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #000000;
+    width: 46px;
+    height: 17px;
+}
+
+.myButton:hover {
+    background-color: #76834e93;
+    color: white;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.secondButton {
+    background-color: $prime;
+    border-radius: 30px;
+    border: 1px solid $prime;
+    display: inline-block;
+    cursor: pointer;
+    color: #4A4A4A;
+    ;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #000000;
+    width: 60px;
+    height: 17px;
+}
+
+.secondButton:hover {
+    box-shadow: inset 0 -1em 1em rgba(2, 2, 2, 0.233);
+}
+
+.secondButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn {
+    @include dFlex($js: center, $ai: center, $g: 20px);
+}
+
+.subline {
+    width: 100%;
+}
+
+.bottom_text {
+    width: 100%;
+    display: flex;
+    gap: 13px;
+}
+
+.bottom_headline {
+    @include dFlex($js: flex-start, $ai: flex-start, $g: 15px);
+    flex-direction: column;
+    width: 100%;
+}
+
+.text_content {
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main {
+    @include dFlex($js: center, $ai: center, $g: 0px);
+    flex-direction: column;
+    width: 830px;
+}
+
+.project_img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    >img {
+        width: 337px;
+        height: 203;
+        border-radius: 30px;
+    }
+}
+
+.text_left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

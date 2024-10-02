@@ -1,0 +1,14 @@
+@import '../../styles.scss';
+
+
+:host {
+    
+        display: flex;
+        position: relative;
+    
+}
+.content {
+    margin-left: 172px;
+    width: 100vw;
+    display: flex;
+}

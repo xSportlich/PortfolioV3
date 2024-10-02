@@ -1,0 +1,34 @@
+<div class="container fontQuantico scroll_smooth">
+    <div class="contant">
+        <span class="contactme">Contact Me</span>
+        <div class="fomular">
+            <form (ngSubmit)='onSubmit(contactForm)' #contactForm="ngForm" class="form">
+
+                <input #name="ngModel" [(ngModel)]="contactData.name" minlength="4" name="name" type="text" id="name" placeholder="Your name" required>
+
+                <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" id="email" placeholder="Your e-mail" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="text" minlength="4" type="message" id="message" placeholder="Youre message" required></textarea>
+
+                @if(!message.valid && message.touched && !message.disabled) {
+                    <span class="warn_text">Please enter a message</span>
+                }
+                @if(!name.valid && name.touched && !name.disabled) {
+                    <span class="warn_text">Please enter a name</span>
+                }
+                @if(!email.valid && email.touched && !email.disabled) {
+                    <span class="warn_text">Please enter a email</span>
+                }
+
+                <div class="privacy_policy">
+                    <div class="checkbox-wrapper-40">
+                        <input id="check" type="checkbox" />
+                        <span class="checkbox"></span>
+                    </div>
+                    <span class="policy_text" aria-labelledby="check" aria-required="true">I've raed the <a href="">privacy policy </a>and agree to the processing of my data as outlined.</span>
+                </div>
+                <input id="submit" class="submit" type="submit" value="Send" disabled>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+@import '../../styles.scss';
+
+.header-content {
+
+    background: #B5E93B;
+    position: fixed;
+    width: 172px;
+    height: 100vh;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 15px 9px 31px 4px rgba(0, 0, 0, 0.72);
+    box-shadow: 5px 5px 5px 0px #000000, inset -4px -3px 21px 0px #000000, 15px 9px 31px 4px rgba(0, 0, 0, 0.72);
+    @include dFlex($js: space-around, $ai: center, $g: 0px);
+    flex-direction: column;
+    z-index: 999;
+
+    >.logo {
+        >img {
+            height: 70px;
+
+        }
+    }
+
+    >.infos {
+        color: #4A4A4A;
+        margin-bottom: 160px;
+
+        >a {
+            font-size: 30px;
+            text-decoration: none;
+            color: #4A4A4A;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        @include dFlex($js: center, $ai: center, $g: 28px);
+        @include vertical();
+    }
+}
+
+path {
+    fill: transparent;
+}
+
+text {
+    fill: #000000;
+}

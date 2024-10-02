@@ -1,0 +1,51 @@
+@for(item of projects; track item) {
+
+    <div class="contant hidden">
+        <div class="top">
+            <div class="top_contant">
+                <span class="number">{{item.number}}</span>
+                <span class="headline">Project {{item.name}}</span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="mid">
+                    <div class="text_left">
+                        <div class="main_text">
+                            <div class="point"></div>
+                            <div class="text">
+                                <div class="headline"><span class="title">About the project</span>
+                                    <div class="subline">{{item.aboutTheProject}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_text">
+                            <div class="point"></div>
+                            <div class="text">
+                                <div class="headline"><span class="title">Technologies I have used</span>
+                                    <div class="subline">{{item.TechnologiesIHaveUsed}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_img">
+                    <img src="{{item.img}}" alt="">
+                    <div class="btn">
+                        <a href="{{item.gitHub}}" target="_blank" class="myButton">GitHub</a>
+                        <a href="{{item.liveTest}}" target="_blank" class="secondButton">Live Test</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_text">
+                <div class="point"></div>
+                <div class="text_content">
+                    <div class="bottom_headline"><span class="title">What i have learned</span>
+                        <div class="subline">{{item.WhatIHaveLearned}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    }
