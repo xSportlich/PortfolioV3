@@ -16,12 +16,12 @@ import { ProjectsComponent } from './projects/projects.component';
 })
 export class MyworkComponent implements AfterViewInit {
 
-  // constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService) {
     
-  // }
+  }
 
   ngAfterViewInit() {
-    this.animationx(); // Call the function here after the view is initialized
+    this.animationx(); 
   }
 
   animationx() {

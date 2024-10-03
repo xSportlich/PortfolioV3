@@ -1,0 +1,75 @@
+@import '../../styles.scss';
+
+.container_footer{
+      
+        background-color: black !important;
+    
+}
+
+.imprint_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    margin-left: 172px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.langueges {
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    >a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: $prime;
+        }
+    }
+}
+
+.space-content {
+    border: 1px solid;
+    border-color: white;
+    height: 15px;
+}
+
+.imprint {
+    font-size: 60px;
+}
+
+.adress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact {
+    font-size: 30px;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quelle {
+    >a {
+        text-decoration: none;
+        color: $prime;
+    }
+}

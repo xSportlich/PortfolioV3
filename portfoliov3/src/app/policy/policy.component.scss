@@ -1,0 +1,28 @@
+@import '../../styles.scss';
+
+.content {
+    max-width: 100vw;
+    height: 100%;
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+    >a {
+        text-decoration: none;
+        color: $prime;
+    }
+}
+
+.container {
+    padding: 30px;
+    margin-left: 172px;
+    margin-bottom: 200px;
+    >a {
+        text-decoration: none;
+        color: $prime;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $prime;
+}

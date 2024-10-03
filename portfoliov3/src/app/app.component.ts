@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { MaincontentComponent } from './maincontent/maincontent.component';
 import { HeaderComponent } from './header/header.component';
 import { SharedComponent } from './shared/shared.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { SharedComponent } from './shared/shared.component';
     RouterOutlet,
     MaincontentComponent,
     HeaderComponent,
-    SharedComponent
+    SharedComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
