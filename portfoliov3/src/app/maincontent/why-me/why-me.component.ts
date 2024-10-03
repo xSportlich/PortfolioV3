@@ -12,7 +12,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './why-me.component.scss'
 })
 export class WhyMeComponent {
-  // constructor(private translate: TranslateService) {
-    
-  // }
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+  }
 }

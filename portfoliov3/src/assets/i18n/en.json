@@ -1,8 +1,40 @@
 {
-    "general": {
-     "hello": "Hello"   
+    "myWork": {
+        "myWork": "My Work",
+        "About": "Über das Project",
+        "text1-Project1": "Task manager inspired by the Kanban System. Create and Organize tasks using drag and drop functions, assign users and categories.",
+        "technologies": "Technologies I have used",
+        "learned": "What i have learned",
+        "text3-Project1": "I learned a variety of skills. My JavaScript knowledge was tested in combination with Firebase, which gave me a whole new understanding of how programming works. Additionally, I learned to organize myself within a team and take responsibility for deadlines.",
+        "ongoing": "Ongoing project",
+        "text4": "I am currently working on developing anonline shop for pet foods.This is for me both exciting andchallenging. In my work the key tosuccess lies in a good planning andexecution.",
+        "letstalk": "Let`s Talke"
     },
-    "home": {
-        "title": "Home"
+    "myWork2": {
+        "About": "Über das Project",
+        "text1-Project1": "Mafia 5 is a Jump, Run and Shoot Game. Help Fernando find and eliminate the criminal San Davis.",
+        "technologies": "Technologies I have used",
+        "learned": "What i have learned",
+        "text3-Project1": "The focus in Mafia 5 is Object-oriented with class-based programming to to develop a well-designed game with complex tasks such as collision detection."
+    },
+    "header": {
+        "contact": "Contact",
+        "mywork": "My Work",
+        "skills": "Skills",
+        "whyme": "Why Me"
+    },
+    "whyme": {
+        "whyme": "Why Me",
+        "text1": "I am motivated to continously learn new technologies and develop myself.My ability to solve comlex problems and my passion for programming make me avalueable member of your team.","technologies": "Technologies I have used",
+        "iam": "I am",
+        "remote": "open to work remote",
+        "relocate": "open to relocate",
+        "contactme": "Contact me"
+    },
+    "myskills": {
+        "whyme": "My Skills",
+        "text1": "The IT landscape is continously evolving, with new technologies and methodologies.Staying motivated to expand my IT skills requires a stategic approach, a curious mindset, and a commitmentto lifelong learning.",
+        "text2": "I am always happy to learn new technologies,just tell me what you meed."
     }
+
 }

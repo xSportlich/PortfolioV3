@@ -5,6 +5,7 @@ import { MaincontentComponent } from './maincontent/maincontent.component';
 import { HeaderComponent } from './header/header.component';
 import { SharedComponent } from './shared/shared.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     MaincontentComponent,
     HeaderComponent,
     SharedComponent,
-    FooterComponent
+    FooterComponent,
+    TranslateModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

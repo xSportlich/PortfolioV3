@@ -9,7 +9,7 @@ import { ProjectsComponent } from './projects/projects.component';
   imports: [
     ProjectsComponent,
     CommonModule,
-    TranslateModule
+    TranslateModule 
   ],
   templateUrl: './mywork.component.html',
   styleUrl: './mywork.component.scss'
@@ -17,8 +17,10 @@ import { ProjectsComponent } from './projects/projects.component';
 export class MyworkComponent implements AfterViewInit {
 
   constructor(private translate: TranslateService) {
-    
+    // You can now use the injected service safely
+    this.translate.setDefaultLang('en');
   }
+
 
   ngAfterViewInit() {
     this.animationx(); 
