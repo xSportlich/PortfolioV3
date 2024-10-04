@@ -35,6 +35,11 @@
         "whyme": "My Skills",
         "text1": "The IT landscape is continously evolving, with new technologies and methodologies.Staying motivated to expand my IT skills requires a stategic approach, a curious mindset, and a commitmentto lifelong learning.",
         "text2": "I am always happy to learn new technologies,just tell me what you meed."
+    },
+    "reference": {
+        "text1": "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague",
+        "text2": "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
+        "text3": "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague."
     }
 
 }

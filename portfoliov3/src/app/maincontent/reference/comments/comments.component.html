@@ -1,10 +1,17 @@
-@for(item of comments; track item) {
-    <div class="contant hidden">
-        <div class="text">{{item.text}}</div>
+<!-- @for(item of translatedComments; track item) { -->
+<!-- <div *ngFor="let comment of translatedComments" class="contant hidden">
+        <div class="text">{{comment.text}} </div>
         <div class="line"></div>
         <div class="person">
-            <span class="name">{{item.name}}</span>
-            <span class="project">{{item.project}}</span>
+            <span class="name">{{comment.name}}</span>
+            <span class="project">{{comment.project}}</span>
         </div>
-    </div>
-    }
+    </div> -->
+<!-- } -->
+
+
+<div *ngFor="let comment of translatedComments">
+        <p>{{ comment.text }}</p>
+        <p><strong>{{ comment.name }}</strong></p>
+        <p>{{ comment.project }}</p>
+</div>
