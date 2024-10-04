@@ -45,3 +45,20 @@ path {
 text {
     fill: #000000;
 }
+
+@media  (max-width: 900px){
+    .header-content {
+        width: 100%;
+        height: 45px;
+        align-items: flex-start;
+        padding: 20px;
+    } 
+    .infos {
+        display: none !important;
+    }
+    .logo {
+        >img{
+            height: 35px !important;
+        } 
+    }
+}

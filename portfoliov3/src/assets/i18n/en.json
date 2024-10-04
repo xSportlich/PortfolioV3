@@ -1,7 +1,7 @@
 {
     "myWork": {
         "myWork": "My Work",
-        "About": "Über das Project",
+        "About": "About the project",
         "text1-Project1": "Task manager inspired by the Kanban System. Create and Organize tasks using drag and drop functions, assign users and categories.",
         "technologies": "Technologies I have used",
         "learned": "What i have learned",
@@ -40,6 +40,17 @@
         "text1": "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague",
         "text2": "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
         "text3": "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague."
+    },
+    "contactme":  {
+        "input1": "Your name",
+        "input2": "Your email",
+        "input3": "Your message"
+    },
+    "letuswork":  {
+        "text1": "Let us work together",
+        "text2": "Whether your project involves developing a new application, upgrading existing systems, or implementing robust cybersecurity measures, I have the technical acumen and problem-solving skills to ensure successful outcomes.",
+        "legalnotice": "Legal notice",
+        "privaci": "privacy policy"
     }
 
 }

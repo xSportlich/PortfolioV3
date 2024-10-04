@@ -26,6 +26,7 @@ export class AppComponent implements AfterViewInit{
   title = 'portfoliov3';
   // title = 'portfolio';
 
+
   ngAfterViewInit(): void {
     const bodyElement = document.getElementById("scroll");
     let isScrolling: boolean | number = false; // Variable zur Steuerung der Scroll-Animation

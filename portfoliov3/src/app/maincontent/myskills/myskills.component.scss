@@ -58,3 +58,42 @@
     font-size: 18px;
     width: 230px;
 }
+
+@media (max-width: 900px) {
+
+    .content {
+        margin-left: 0px;
+        height: 0%;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        margin-left: 0px !important;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .info_content {
+        margin-top: 0px !important;
+        width: 100% !important;
+        >.text {
+            width: 100% !important;
+        }
+    }
+    .my_skill {
+        margin-top: 0px !important;
+        writing-mode: horizontal-tb !important;
+        transform: none !important;
+    }
+    .icons-container {
+        width: 100%;
+    }
+    .arrow {
+        display: none;
+    }
+    .extra_text {
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+    }
+}

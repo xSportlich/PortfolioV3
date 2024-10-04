@@ -1,10 +1,10 @@
-@for(item of projects; track item) {
+<!-- @for(item of projects; track item) { -->
 
-    <div class="contant hidden">
+<!-- <div  *ngFor="let project of translatedComments; trackBy: trackComment" class="contant hidden">
         <div class="top">
             <div class="top_contant">
-                <span class="number">{{item.number}}</span>
-                <span class="headline">Project {{item.name}}</span>
+                <span class="number">{{project.number}}</span>
+                <span class="headline">Project {{project.name}}</span>
             </div>
         </div>
         <div class="main">
@@ -15,7 +15,7 @@
                             <div class="point"></div>
                             <div class="text">
                                 <div class="headline"><span class="title">About the project</span>
-                                    <div class="subline">{{item.aboutTheProject}}</div>
+                                    <div class="subline">{{project.aboutTheProject}}</div>
                                 </div>
                             </div>
                         </div>
@@ -23,7 +23,7 @@
                             <div class="point"></div>
                             <div class="text">
                                 <div class="headline"><span class="title">Technologies I have used</span>
-                                    <div class="subline">{{item.TechnologiesIHaveUsed}}</div>
+                                    <div class="subline">{{project.TechnologiesIHaveUsed}}</div>
                                 </div>
                             </div>
                         </div>
@@ -41,11 +41,119 @@
                 <div class="point"></div>
                 <div class="text_content">
                     <div class="bottom_headline"><span class="title">What i have learned</span>
-                        <div class="subline">{{item.WhatIHaveLearned}}</div>
+                        <div class="subline">{{project.WhatIHaveLearned}}</div>
                     </div>
                 </div>
             </div>
         </div>
     
+    </div> -->
+<!-- } -->
+
+<!-- <div *ngFor="let project of translatedComments; trackBy: trackComment" class="contant hidden">
+        <div class="top">
+          <div class="top_contant">
+            <span class="number">{{ project.number }}</span>
+            <span class="headline">Project {{ project.name }}</span>
+          </div>
+        </div>
+        
+        <div class="main">
+          <div class="container">
+            <div class="mid">
+              <div class="text_left">
+                <div class="main_text">
+                  <div class="point"></div>
+                  <div class="text">
+                    <div class="headline">
+                      <span class="title">About the project</span>
+                      <div class="subline">{{ project.text }}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main_text">
+                  <div class="point"></div>
+                  <div class="text">
+                    <div class="headline">
+                      <span class="title">Technologies I have used</span>
+                      <div class="subline">{{ project.TechnologiesIHaveUsed }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project_img">
+              <img [src]="project.img" alt="{{ project.name }}"> 
+              <div class="btn">
+                <a [href]="project.gitHub" target="_blank" class="myButton">GitHub</a>
+                <a [href]="project.liveTest" target="_blank" class="secondButton">Live Test</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bottom_text">
+            <div class="point"></div>
+            <div class="text_content">
+              <div class="bottom_headline">
+                <span class="title">What I have learned</span>
+                <div class="subline">{{ project.WhatIHaveLearned }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+<div *ngFor="let project of translatedComments; trackBy: trackComment" class="contant hidden">
+    <div class="top">
+        <div class="top_contant">
+            <span class="number">{{ project.number }}</span>
+            <span class="headline">Project {{ project.name }}</span>
+        </div>
     </div>
-    }
+
+    <div class="main">
+        <div class="container">
+            <div class="mid">
+                <div class="text_left">
+                    <div class="main_text">
+                        <div class="point"></div>
+                        <div class="text">
+                            <div class="headline">
+                                <span class="title">{{'myWork.About' | translate}}</span>
+                                <div class="subline">{{ project.text }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_text">
+                        <div class="point"></div>
+                        <div class="text">
+                            <div class="headline">
+                                <span class="title">{{'myWork.technologies' | translate}}</span>
+                                <div class="subline">{{ project.technologies }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_img">
+                <img [src]="project.img" alt="{{ project.name }}">
+                <div class="btn">
+                    <a [href]="project.gitHub" target="_blank" class="myButton">GitHub</a>
+                    <a [href]="project.liveTest" target="_blank" class="secondButton">Live Test</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_text">
+            <div class="point"></div>
+            <div class="text_content">
+                <div class="bottom_headline">
+                    <span class="title">{{'myWork.learned' | translate}}</span>
+                    <div class="subline">{{ project.learned }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

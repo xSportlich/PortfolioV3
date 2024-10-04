@@ -1,0 +1,56 @@
+{
+    "myWork": {
+        "myWork": "My Work",
+        "About": "Über das Projekt",
+        "text1-Project1": "Task-Manager inspiriert vom Kanban-System. Erstellen und Organisieren von Aufgaben mit Drag-and-Drop-Funktionen, Zuweisung von Benutzern und Kategorien.",
+        "technologies": "Verwendete Technologien",
+        "learned": "Was ich gelernt habe",
+        "text3-Project1": "Ich habe eine Vielzahl von Fähigkeiten erlernt. Mein JavaScript-Wissen wurde in Kombination mit Firebase auf die Probe gestellt, was mir ein völlig neues Verständnis davon gegeben hat, wie Programmierung funktioniert. Außerdem habe ich gelernt, mich in einem Team zu organisieren und Verantwortung für Fristen zu übernehmen.",
+        "ongoing": "Laufendes Projekt",
+        "text4": "Derzeit arbeite ich an der Entwicklung eines Online-Shops für Tiernahrung. Dies ist sowohl spannend als auch herausfordernd für mich. Der Schlüssel zum Erfolg liegt in einer guten Planung und Ausführung.",
+        "letstalk": "Lass uns reden"
+    },
+    "myWork2": {
+        "About": "Über das Projekt",
+        "text1-Project1": "Mafia 5 ist ein Jump-, Run- und Shoot-Spiel. Hilf Fernando, den Verbrecher San Davis zu finden und zu eliminieren.",
+        "technologies": "Verwendete Technologien",
+        "learned": "Was ich gelernt habe",
+        "text3-Project1": "Der Fokus bei Mafia 5 liegt auf objektorientierter, klassenbasierter Programmierung, um ein gut gestaltetes Spiel mit komplexen Aufgaben wie Kollisionsdetektion zu entwickeln."
+    },
+    "header": {
+        "contact": "Kontakt",
+        "mywork": "Arbeit",
+        "skills": "Fähigkeiten",
+        "whyme": "Warum ich"
+    },
+    "whyme": {
+        "whyme": "Why Me",
+        "text1": "Ich bin motiviert, kontinuierlich neue Technologien zu erlernen und mich weiterzuentwickeln. Meine Fähigkeit, komplexe Probleme zu lösen, und meine Leidenschaft für Programmierung machen mich zu einem wertvollen Mitglied Ihres Teams.",
+        "technologies": "Verwendete Technologien",
+        "iam": "Ich bin",
+        "remote": "offen für Fernarbeit",
+        "relocate": "bereit umzuziehen",
+        "contactme": "Kontaktieren Sie mich"
+    },
+    "myskills": {
+        "whyme": "My Skills",
+        "text1": "Die IT-Landschaft entwickelt sich ständig weiter, mit neuen Technologien und Methoden. Motiviert zu bleiben, meine IT-Kenntnisse zu erweitern, erfordert einen strategischen Ansatz, eine neugierige Denkweise und die Verpflichtung zum lebenslangen Lernen.",
+        "text2": "Ich bin immer bereit, neue Technologien zu erlernen, sagen Sie mir einfach, was Sie brauchen."
+    },
+    "reference": {
+        "text1": "Michael ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen.",
+        "text2": "Michael ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen.",
+        "text3": "Michael ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen."
+    },
+    "contactme": {
+        "input1": "Dein Name",
+        "input2": "Deine E-Mail",
+        "input3": "Deine Nachricht"
+    },
+    "letuswork": {
+        "text1": "Lass uns zusammenarbeiten",
+        "text2": "Egal, ob Ihr Projekt die Entwicklung einer neuen Anwendung, die Aufrüstung bestehender Systeme oder die Implementierung robuster Sicherheitsmaßnahmen umfasst, ich habe das technische Wissen und die Problemlösungsfähigkeiten, um erfolgreiche Ergebnisse zu gewährleisten.",
+        "legalnotice": "Impressum",
+        "privaci": "Datenschutzerklärung"
+    }
+}

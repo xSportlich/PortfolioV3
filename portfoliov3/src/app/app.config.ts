@@ -24,7 +24,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(), // Modern method to provide HttpClient
     importProvidersFrom(
       TranslateModule.forRoot({
-        defaultLanguage: 'en',
+        defaultLanguage: 'de',
         loader: {
           provide: TranslateLoader,
           useFactory: createTranslateLoader,
