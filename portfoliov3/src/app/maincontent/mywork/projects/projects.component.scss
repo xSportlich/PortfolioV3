@@ -164,6 +164,7 @@
     align-items: flex-start;
 }
 
+
 .main {
     @include dFlex($js: center, $ai: center, $g: 0px);
     flex-direction: column;
@@ -174,6 +175,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     >img {
         width: 337px;
         height: 203;
@@ -185,4 +187,232 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+
+.show-more {
+    display: none;
+}
+
+.expent-btn {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+
+    .container {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .contant {
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background: linear-gradient(to top, rgba(181, 233, 59, 0.096), rgba(181, 233, 59, 0.247));
+        // --max-lines: 5;
+        // display: -webkit-box;
+        // overflow: hidden;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: var(--max-lines);
+
+        // --max-lines: 10;
+        // --line-height: 1.4;
+        // max-height: calc(var(--max-lines) * 1em * var(--line-height));
+        // line-height: var(--line-height);
+    }
+
+    // .contant::before {
+    //     content: "";
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 115%;
+    //     bottom: 0;
+    //     pointer-events: none;
+    //     background: linear-gradient(to bottom, #00000000, #00000047);
+    //     margin-left: -100px;
+    // }
+
+    .main::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 115%;
+        bottom: 0;
+        pointer-events: none;
+        // background: linear-gradient(to bottom, rgba(181, 233, 59, 0),  rgba(181, 233, 59, 0.2274509804));
+        margin-left: -100px;
+    }
+
+    .expent-btn {
+        display: flex;
+        appearance: none;
+        color: $prime;
+    }
+
+    .expent-btn:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .show:hover {
+        cursor: pointer;
+    }
+
+    .expent-btn::before {
+        content: "Show me more";
+    }
+
+    .expent-btn:checked::before {
+        content: "Show me less";
+    }
+
+    .main:has(+ .expent-btn:checked) {
+        max-height: none;
+        --line-height: none;
+        height: none;
+    }
+
+    // .expent-btn:checked ~ .main {
+    //     max-height: none;
+    //     display: block;
+    // }
+    .contant:has(+ .expent-btn:checked) {
+        height: none;
+    }
+
+    .show {
+        margin-top: 10px;
+        display: flex;
+        gap: 5px;
+    }
+
+    .main {
+        position: relative;
+        --max-lines: 5;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: var(--max-lines);
+        display: -webkit-box;
+        --max-lines: 10;
+        // --line-height: 1.4;
+        max-height: calc(var(--max-lines) * 1.4em);
+        ;
+        transition: max-height 0.3s ease;
+    }
+
+    .project_img {
+        margin-top: 300px;
+    }
+
+    .bottom_text {
+        position: absolute;
+        top: 270px;
+    }
+
+    .main {
+        position: relative;
+        width: 100%;
+    }
+
+    .number {
+        font-size: 80px !important;
+    }
+
+    .top_contant {
+        >.headline {
+            font-size: 45px !important;
+        }
+    }
+
+    .mid {
+        width: 100%;
+    }
+
+    .main_text {}
+
+    .text {
+        width: 100%;
+    }
+
+    .show-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        color: $prime;
+        margin-top: 20px;
+        position: absolute;
+        bottom: 22px;
+        margin-left: 110px;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        >img {
+            height: 10px;
+        }
+    }
+
+    .contant {
+        position: relative;
+
+        .expent-btn {
+            margin-top: 15px;
+        }
+
+        .show-more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            color: $prime;
+            margin-top: 10px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+
+        .expent-btn:not(:checked) + & .show-more-text {
+            display: inline;
+        }
+
+        .expent-btn:checked + & .show-less-text {
+            display: inline;
+        }
+
+        .main {
+            max-height: 100px;
+            /* Set initial height */
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        /* When the checkbox is checked, expand the content */
+        .expent-btn:checked~.main {
+            max-height: 900px;
+            /* Adjust this value as needed */
+        }
+
+        .expent-btn:checked~.content {
+            height: 100% !important;
+            /* Adjust this value as needed */
+        }
+
+        /* Change the label text when the content is expanded */
+        // .expent-btn:checked+.show-more span {
+        //     content: "alo";
+        // }
+
+        /* Optional: Rotate the image when expanded */
+        .expent-btn:checked+.show-more img {
+            transform: rotate(180deg);
+        }
+    }
+
 }

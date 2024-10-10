@@ -34,3 +34,128 @@
         filter: drop-shadow(0px 0px 5px #B5E93B);
     }
 }
+
+
+
+@media (max-width: 900px) {
+    .arrow {
+        display: none;
+    }
+    .comments_container {
+        flex-direction: row;
+    }
+    .contant {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to left, rgb(14, 13, 13), rgb(14, 13, 13), rgb(14, 13, 13));
+        @include dFlex($js: center, $ai: flex-end, $g: 0);
+    
+        .contant {
+            @include dFlex($js: center, $ai: flex-end, $g: 40px);
+            margin-bottom: 130px;
+            margin-left: 100px;
+    
+            .reference {
+                @include vertical();
+                font-size: 54px;
+                font-weight: 400;
+                -webkit-text-stroke: 1px #B5E93B;
+                margin-top: 150px;
+                color: rgba(255, 255, 255, 0);
+            }
+    
+            .carousel {
+                position: relative;
+                width: 100%;
+                max-width: 800px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .carousel-wrapper {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                    width: 100%;
+                }
+    
+                .carousel-slide {
+                    min-width: 100%;
+                    transition: opacity 0.5s ease-in-out;
+                    opacity: 0;
+                    display: none;
+    
+                    &.active {
+                        opacity: 1;
+                        display: block;
+                    }
+                }
+    
+                .carousel-control {
+                    background: none;
+                    border: none;
+                    color: #B5E93B;
+                    font-size: 3rem;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 1;
+    
+                    &.prev {
+                        left: 10px;
+                    }
+    
+                    &.next {
+                        right: 10px;
+                    }
+    
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    
+    .comments_container {
+        @include dFlex($js: center, $ai: center, $g: 30px);
+        flex-direction: column;
+    }
+    
+    .arrow {
+        margin-bottom: 400px;
+        margin-left: 100px;
+        &:hover {
+            filter: drop-shadow(0px 0px 5px #B5E93B);
+        }
+    }
+    
+    @media (max-width: 900px) {
+        .arrow {
+            display: none;
+        }
+    
+        .comments_container {
+            flex-direction: row;
+            width: 478px;
+            justify-content: flex-start;
+        }
+    
+        .contant {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px !important;
+            align-items: flex-start !important;
+        }
+    
+        .carousel-control {
+            font-size: 2rem;
+        }
+    }
+    
+}

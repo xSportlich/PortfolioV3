@@ -105,3 +105,34 @@
     //     clip-path: inset(0 0 0 0);
     // }
 }
+
+@media (max-width: 900px) {
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        margin-left: 0px !important;
+        width: 100%;
+        
+    }
+    .render {
+        display: flex;
+        flex-direction: column;
+    }
+    .ani {
+        width: 70% !important;
+    } 
+
+    .arrow {
+        display: none;
+    }
+    .my_work {
+        writing-mode: horizontal-tb !important;
+        transform: rotate(0) !important;
+        margin-bottom: 0px !important;
+    }
+    .future_projects {
+        display: none;
+    }
+}
