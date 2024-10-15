@@ -1,16 +1,27 @@
-<div id="reference" class="container fontQuantico">
+<!-- <div id="reference" class="container fontQuantico">
     <div class="contant">
         <div class="reference">Reference</div>
         <app-comments class="comments_container"></app-comments>
         <a href="#contact"><img class="arrow" src="../../../assets/img/Arrow to switch the sections.png" alt=""></a>
         <div>
-            <a href="#1"></a>
-            <a href="#2"></a>
-            <a href="#3"></a>
+            <a href="#id1">1</a>
+            <a href="#id2">2</a>
+            <a href="#id3">3</a>
         </div>
     </div>
+</div> -->
+
+<div id="reference" class="container fontQuantico">
+  <div class="contant">
+    <div class="reference">Reference</div>
+    <app-comments class="comments_container" #commentsComponent></app-comments>
+    <a href="javascript:void(0)" (click)="slideToComment(0)">
+      <a href="#contact"><img class="arrow"  src="../../../assets/img/Arrow to switch the sections.png" alt=""></a>
+    </a>
+    <div class="page">
+      <a class="switchpage" href="javascript:void(0)" (click)="slideToComment(0)"></a>
+      <a class="switchpage" href="javascript:void(0)" (click)="slideToComment(1)"></a>
+      <a class="switchpage" href="javascript:void(0)" (click)="slideToComment(2)"></a>
+    </div>
+  </div>
 </div>
-
-
-  
-

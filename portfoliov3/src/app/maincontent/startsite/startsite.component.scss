@@ -116,6 +116,7 @@
     .content {
         height: 100vh;
         width: 100vw;
+        background-image: linear-gradient(to top, rgb(22, 22, 22), rgb(0, 0, 0));
     }
 
     .top {
@@ -150,6 +151,67 @@
     .mid {
         flex-direction: column-reverse;
     }
+}
 
+@media (max-width: 730px) {
+    .name {
+        font-size: 60px !important;
+    }
 
+    .subtitle {
+        font-size: 40px;
+    }
+    .content {
+        margin-top: 50px;
+        height: 75vh !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .name {
+        font-size: 60px !important;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 560px) {
+    .name {
+        font-size: 45px !important;
+    }
+
+    .subtitle {
+        font-size: 32px !important;
+    }
+}
+@media (max-width: 320px) {
+    .name {
+        font-size: 30px !important;
+    }
+
+    .subtitle {
+        font-size: 22px !important;
+        -webkit-text-stroke: 0px !important;
+        color: #B5E93B !important;
+    }
+    .alzey {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .name {
+        font-size: 30px !important;
+    }
+
+    .subtitle {
+        font-size: 22px !important;
+        -webkit-text-stroke: 0px !important;
+        color: #B5E93B !important;
+    }
+    .alzey {
+        font-size: 20px;
+    }
 }

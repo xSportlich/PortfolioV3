@@ -1,42 +1,68 @@
 @import '../../../../styles.scss';
 
 .contant {
-    width: 478px;
-    height: 182px;
-    background-color: rgba(0, 0, 0, 0);
+  width: 478px;
+  height: 182px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid;
+  border-color: $prime;
+  border-radius: 30px;
+  padding: 10px;
+  @include dFlex($js: center, $ai: center, $g: 20px);
+
+
+  >.text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    height: 100%;
+    width: 300px;
+    @include dFlex($js: center, $ai: center, $g: 0);
+  }
+
+  >.line {
     border: 1px solid;
-    border-color: $prime;
     border-radius: 30px;
-    padding: 10px;
-    @include dFlex($js: center, $ai: center, $g: 20px);
+    height: 120px;
+    border-color: $prime;
+  }
 
-    >.text {
-        color: white;
-        font-size: 18px;
-        text-align: center;
-        height: 100%;
-        width: 300px;
-        @include dFlex($js: center, $ai: center, $g: 0);
+  >.person {
+    @include dFlex($js: center, $ai: center, $g: 0);
+    flex-direction: column;
+
+    >.name {
+      color: $prime;
+      font-size: 24px;
     }
 
-    >.line {
-        border: 1px solid;
-        border-radius: 30px;
-        height: 120px;
-        border-color: $prime;
-    }
+    >.project {
+      font-size: 14px;
+      color: #D3ED97;
 
-    >.person {
-        @include dFlex($js: center, $ai: center, $g: 0);
-        flex-direction: column;
-        >.name {
-          color: $prime;
-          font-size: 24px;
-        }
-        >.project {
-            font-size: 14px;
-            color: #D3ED97;
-
-        }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .comments_wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .comments_slider {
+    display: flex !important;
+    transition: transform 0.5s ease-in-out;
+    gap: 30px;
+  }
+
+  .comment {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .hidden {
+    transition: none;
+  }
 }

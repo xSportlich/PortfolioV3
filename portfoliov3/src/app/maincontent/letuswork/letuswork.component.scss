@@ -72,9 +72,19 @@
     }
 }
 
+.contactme {
+    font-size: 54px;
+    font-weight: 400;
+    -webkit-text-stroke: 1px #B5E93B;
+    // margin-top: 150px;
+    color: rgba(255, 255, 255, 0);
+    display: none;
+}
+
 .Legal_notice {
     text-decoration: none;
     color: white;
+
     &:hover {
         cursor: pointer;
         color: #D3ED97;
@@ -84,6 +94,7 @@
 .privacy_policy {
     text-decoration: none;
     color: white;
+
     &:hover {
         cursor: pointer;
         color: #D3ED97;
@@ -94,7 +105,35 @@
     transform: rotate(181deg);
     justify-content: end;
     margin-right: 2px;
+
     &:hover {
         filter: drop-shadow(0px 0px 5px #B5E93B);
+    }
+}
+
+@media (max-width: 900px) {
+    .contactme {
+        display: flex;
+    }
+    .contant {
+        align-items: start !important;
+        margin-right: 0px !important;
+        gap: 20px !important;
+    }
+    .material{
+        align-items: start !important;
+        gap: 30px !important;
+        >.text {
+            text-align: start !important;
+        }
+    }
+    .person_infos {
+        align-items: start !important;
+    }
+    .arrow {
+        display: none;
+    }
+    .extra_infos {
+        display: none !important;
     }
 }
