@@ -27,3 +27,12 @@
         text-align: center;
     }
 }
+
+@media (max-width: 390px) {
+    .hover_effect {
+        height: 45px;
+    }
+    .text {
+        display: none !important;
+    }
+}

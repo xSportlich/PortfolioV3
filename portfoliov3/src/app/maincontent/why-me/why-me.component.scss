@@ -238,11 +238,21 @@
     .img_animation-remote {
         margin-right: 18px;
     }
+    .container {
+        // align-items: center;
+    }
+    .btn {
+        margin-left: 0px !important;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 320px) {
     .container {
-        align-items: center;
+        align-items: flex-start !important;
     }
     .btn {
         margin-left: 0px !important;
@@ -251,9 +261,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 32px !important;
     }
     .icons {
         margin-top: 30px;
+    }
+    .why-me-text {
+        font-size: 32px !important;
+    }
+    .about-me {
+        font-size: 16px !important;
+    }
+    .icon-text {
+        font-size: 16px !important;
     }
 }
 

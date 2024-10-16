@@ -10,12 +10,14 @@
         @include dFlex($js: center, $ai: flex-start, $g: 40px);
         margin-left: 100px;
 
-        >.my_work {
-            @include vertical();
-            font-size: 54px;
-            font-weight: 400;
-            -webkit-text-stroke: 1px #B5E93B;
-            margin-bottom: 200px;
+        >.headline {
+            >.my_work {
+                @include vertical();
+                font-size: 54px;
+                font-weight: 400;
+                -webkit-text-stroke: 1px #B5E93B;
+                margin-bottom: 200px;
+            }
         }
     }
 }
@@ -109,30 +111,48 @@
 @media (max-width: 900px) {
 
     .content {
+        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center !important;
         margin-left: 0px !important;
         width: 100%;
         background-image: linear-gradient(to bottom, rgb(14, 13, 13), rgb(31, 30, 30), rgb(14, 13, 13));
+        gap: 0px !important;
     }
+
     .render {
         display: flex;
         flex-direction: column;
     }
+
     .ani {
         width: 70% !important;
-    } 
+    }
 
     .arrow {
         display: none;
     }
-    .my_work {
-        writing-mode: horizontal-tb !important;
-        transform: rotate(0) !important;
-        margin-bottom: 0px !important;
+
+    .headline {
+        width: 78%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        >.my_work {
+            writing-mode: horizontal-tb !important;
+            transform: rotate(0) !important;
+            margin-bottom: 0px !important;
+        }
     }
+
     .future_projects {
         display: none;
     }
+}
+@media (max-width: 320px) {
+    .my_work {
+        font-size: 32px !important;
+    }
+
 }

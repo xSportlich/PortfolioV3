@@ -66,3 +66,12 @@
     transition: none;
   }
 }
+
+@media (max-width: 320px) {
+  .comments_wrapper {
+    width: 60%;
+  }
+  .hidden {
+    height: 113%;
+  }
+}
