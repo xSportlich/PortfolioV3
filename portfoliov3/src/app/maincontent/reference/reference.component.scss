@@ -40,6 +40,10 @@
     display: none;
 }
 
+.text_content {
+    display: none;
+}
+
 
 
 @media (max-width: 900px) {
@@ -49,6 +53,7 @@
 
     .comments_container {
         flex-direction: row;
+        margin-top: 50px;
     }
 
     .contant {
@@ -63,7 +68,7 @@
         @include dFlex($js: center, $ai: flex-end, $g: 0);
 
         .contant {
-            @include dFlex($js: center, $ai: flex-end, $g: 40px);
+            @include dFlex($js: center, $ai: flex-end, $g: 0px);
             margin-bottom: 130px;
             margin-left: 100px;
 
@@ -128,6 +133,7 @@
                 }
             }
         }
+
     }
 
     .comments_container {
@@ -160,12 +166,15 @@
             flex-direction: column;
             margin-left: 0px !important;
             align-items: flex-start !important;
+            margin-bottom: 50px !important;
+            margin-top: 40px;
         }
 
         .page {
             display: flex;
             gap: 10px;
             margin-left: 200px;
+            margin-top: 20px;
         }
 
         .carousel-control {
@@ -182,39 +191,64 @@
         }
 
         .reference {
+            display: none;
             writing-mode: horizontal-tb !important;
             transform: none !important;
+            margin-top: 50px !important;
         }
+    }
 
+    .text_content {
+        display: flex;
+        flex-direction: column;
+    }
 
-        // .comments_wrapper {
-        //     width: 100%;
-        //     overflow: hidden; /* Ensure no content overflows outside */
-        //     position: relative;
-        //   }
+    .text1 {
+        color: #B5E93B;
+        font-size: 22px;
+    }
 
-        //   .comments_slider {
-        //     display: flex !important; /* Flexbox to make the comments appear horizontally */
-        //     transition: transform 0.5s ease-in-out; /* Smooth sliding animation */
-        //   }
-
-        //   .comment {
-        //     min-width: 100%; /* Make each comment take up full width of the container */
-        //     box-sizing: border-box;
-        //     padding: 20px;
-        //   }
+    .text2 {
+        color: white;
+        font-size: 16px;
     }
 
 }
+
 @media (max-width: 510px) {
     .contant {
         width: 100% !important;
+        padding: 20px !important;
+    }
+
+    .container {
+        padding: 20px !important;
+    }
+
+    .page {
+        margin-left: 175px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .page {
+        margin-left: 150px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .page {
+        margin-left: 137px !important;
     }
 }
 
 @media (max-width: 390px) {
     .contant {
         width: 100% !important;
+    }
+
+    .reference {
+        font-size: 32px !important;
     }
 }
 

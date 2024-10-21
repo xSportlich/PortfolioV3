@@ -22,18 +22,16 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.translate.onLangChange.subscribe(() => {
-      // Call translateComments() when the language is changed or initialized
       this.translateComments();
     });
   
-    // You can also directly call it in ngOnInit if you know the language is loaded
     this.translateComments();
   }
 
   ngAfterViewInit() {
     this.translateComments().then(() => {
       setTimeout(() => {
-        this.animationx(); // Delay to ensure DOM elements are fully loaded
+        this.animationx();
       }, 0);
     });
   }
@@ -76,12 +74,10 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
     }
   ];
 
-  // Define the trackComment function here
   trackComment(index: number, comment: any) {
-    return comment.name; // or you can use comment.project if it's unique
+    return comment.name; 
   }
 
-  // Translate comments (using async/await for better readability)
   async translateComments() {
     const translationPromises = this.projects.map(async (comment) => {
       try {
@@ -98,7 +94,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       } catch (err) {
         return { 
           ...comment, 
-          text: comment.aboutTheProject, // Fallback to original text if error
+          text: comment.aboutTheProject, 
           technologies: comment.TechnologiesIHaveUsed, 
           learned: comment.WhatIHaveLearned
         };

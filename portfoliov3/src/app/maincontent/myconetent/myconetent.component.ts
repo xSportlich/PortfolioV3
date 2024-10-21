@@ -34,10 +34,11 @@ export class MyconetentComponent implements AfterViewInit{
     },
   };
 
-  constructor(private http: HttpClient) {} // Use constructor injection instead
+  constructor(private http: HttpClient) {}
 
   ngAfterViewInit(): void {
     this.chechBox();
+    this.cangeColor(); 
   }
 
   chechBox() {
@@ -67,6 +68,23 @@ export class MyconetentComponent implements AfterViewInit{
       console.log('send');
       ngForm.resetForm();
     }
+  }
+
+
+  cangeColor() {
+    let contact: any = document.getElementById('contact2');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          contact.classList.add('white');
+        } else {
+          contact.classList.remove('white');
+        }
+      });
+    });
+  
+    const hiddenElements = document.querySelectorAll('.target4');
+    hiddenElements.forEach((el) => observer.observe(el));
   }
 }
 

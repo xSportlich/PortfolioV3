@@ -40,7 +40,9 @@
     "reference": {
         "text1": "Michael ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen.",
         "text2": "Michael ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen.",
-        "text3": "Michael ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen."
+        "text3": "Michael ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen.",
+        "headline" : "Brauchst du einen Teamplayer?",
+        "subline" : "Hier ist, was meine Kolleg*innen über mich gesagt haben."
     },
     "contactme": {
         "input1": "Dein Name",

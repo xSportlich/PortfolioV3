@@ -152,6 +152,10 @@
   }
 }
 
+.arrow {
+  display: none;
+}
+
 .privacy_policy {
   display: flex;
   gap: 10px;
@@ -204,6 +208,7 @@ input[type="submit"]:disabled {
     align-items: center !important;
     gap: 0px !important;
   }
+
   .container {
     margin-right: 0px !important;
     // width: 88% !important;
@@ -212,22 +217,31 @@ input[type="submit"]:disabled {
   .contactme {
     display: none;
   }
+
   .arrow {
+    display: flex;
     transform: rotate(-90deg);
     margin-bottom: 100px;
     margin-top: 120px;
     height: 30px;
+
     &:hover {
       filter: drop-shadow(0px 0px 5px #B5E93B);
     }
   }
+
   .social-medias {
     display: flex;
     gap: 30px;
     margin-bottom: 60px;
+
     >a {
       >img {
         height: 35px;
+
+        &:hover {
+          filter: brightness(0) saturate(100%) invert(76%) sepia(89%) saturate(363%) hue-rotate(24deg) brightness(99%) contrast(93%);
+        }
       }
     }
   }
@@ -236,5 +250,22 @@ input[type="submit"]:disabled {
 @media (max-width: 550px) {
   .fomular {
     width: 100% !important;
+  }
+
+  .form {
+    align-items: start !important;
+    padding: 20px !important;
+  }
+
+  #name {
+    width: 93% !important;
+  }
+
+  #email {
+    width: 93% !important;
+  }
+
+  #message {
+    width: 86% !important;
   }
 }

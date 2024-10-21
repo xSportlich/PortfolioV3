@@ -1,19 +1,12 @@
-<!-- <div id="reference" class="container fontQuantico">
-    <div class="contant">
-        <div class="reference">Reference</div>
-        <app-comments class="comments_container"></app-comments>
-        <a href="#contact"><img class="arrow" src="../../../assets/img/Arrow to switch the sections.png" alt=""></a>
-        <div>
-            <a href="#id1">1</a>
-            <a href="#id2">2</a>
-            <a href="#id3">3</a>
-        </div>
-    </div>
-</div> -->
+
 
 <div id="reference" class="container fontQuantico">
   <div class="contant">
     <div class="reference">Reference</div>
+    <div class="text_content">
+      <span class="text1">{{'reference.headline' | translate}}</span>
+      <span class="text2">{{'reference.subline' | translate}}</span>
+    </div>
     <app-comments class="comments_container" #commentsComponent></app-comments>
     <a href="javascript:void(0)" (click)="slideToComment(0)">
       <a href="#contact"><img class="arrow"  src="../../../assets/img/Arrow to switch the sections.png" alt=""></a>

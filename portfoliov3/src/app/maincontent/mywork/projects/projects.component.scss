@@ -211,28 +211,7 @@
         width: 100%;
         position: relative;
         background: linear-gradient(to top, rgba(181, 233, 59, 0.096), rgba(181, 233, 59, 0.247));
-        // --max-lines: 5;
-        // display: -webkit-box;
-        // overflow: hidden;
-        // -webkit-box-orient: vertical;
-        // -webkit-line-clamp: var(--max-lines);
-
-        // --max-lines: 10;
-        // --line-height: 1.4;
-        // max-height: calc(var(--max-lines) * 1em * var(--line-height));
-        // line-height: var(--line-height);
     }
-
-    // .contant::before {
-    //     content: "";
-    //     position: absolute;
-    //     height: 100%;
-    //     width: 115%;
-    //     bottom: 0;
-    //     pointer-events: none;
-    //     background: linear-gradient(to bottom, #00000000, #00000047);
-    //     margin-left: -100px;
-    // }
 
     .main::before {
         content: "";
@@ -241,7 +220,6 @@
         width: 115%;
         bottom: 0;
         pointer-events: none;
-        // background: linear-gradient(to bottom, rgba(181, 233, 59, 0),  rgba(181, 233, 59, 0.2274509804));
         margin-left: -100px;
     }
 
@@ -274,10 +252,6 @@
         height: none;
     }
 
-    // .expent-btn:checked ~ .main {
-    //     max-height: none;
-    //     display: block;
-    // }
     .contant:has(+ .expent-btn:checked) {
         height: none;
     }
@@ -296,7 +270,6 @@
         -webkit-line-clamp: var(--max-lines);
         display: -webkit-box;
         --max-lines: 10;
-        // --line-height: 1.4;
         max-height: calc(var(--max-lines) * 1.4em);
         ;
         transition: max-height 0.3s ease;
@@ -378,7 +351,6 @@
             }
         }
 
-
         .expent-btn:not(:checked)+& .show-more-text {
             display: inline;
         }
@@ -389,28 +361,18 @@
 
         .main {
             max-height: 100px;
-            /* Set initial height */
             overflow: hidden;
             transition: max-height 0.3s ease;
         }
 
-        /* When the checkbox is checked, expand the content */
         .expent-btn:checked~.main {
             max-height: 900px;
-            /* Adjust this value as needed */
         }
 
         .expent-btn:checked~.content {
             height: 100% !important;
-            /* Adjust this value as needed */
         }
 
-        /* Change the label text when the content is expanded */
-        // .expent-btn:checked+.show-more span {
-        //     content: "alo";
-        // }
-
-        /* Optional: Rotate the image when expanded */
         .expent-btn:checked+.show-more img {
             transform: rotate(180deg);
         }
@@ -440,23 +402,49 @@
 
     .project_img {
         margin-top: 430px !important;
+
         >img {
             width: 212px !important;
         }
     }
+
     .btn {
         flex-direction: column;
     }
+
     .subline {
         font-size: 16px !important;
     }
 }
 
+@media (max-width: 630px) {
+    .top_contant {
+        >.headline {
+            font-size: 35px !important;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .hidden {
+        opacity: 1;
+        filter: blur(5px);
+        transform: translateX(-100%) !important;
+        transition: all 2s;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) !important;
+    }
+}
 
 @media (max-width: 390px) {
     .bottom_text {
         top: 380px;
     }
+
     .project_img {
         margin-top: 360px;
     }

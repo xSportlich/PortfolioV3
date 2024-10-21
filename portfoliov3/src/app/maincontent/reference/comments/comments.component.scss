@@ -67,6 +67,31 @@
   }
 }
 
+@media (max-width: 510px) {
+  .contant {
+      width: 100% !important;
+      padding: 20px !important;
+  }
+  .comment {
+    min-width: 85% !important;
+  }
+  .text {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .comment {
+      min-width: 75% !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .comment {
+      min-width: 70% !important;
+  }
+}
+
 @media (max-width: 320px) {
   .comments_wrapper {
     width: 60%;
