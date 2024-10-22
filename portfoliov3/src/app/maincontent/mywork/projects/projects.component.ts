@@ -58,7 +58,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       aboutTheProject: 'myWork.text1-Project1',
       TechnologiesIHaveUsed: 'Javascript, HTML, CSS, Firebase, GIT',
       WhatIHaveLearned: 'myWork.text3-Project1',
-      img: '../../../../assets/img/Property 1=Jon Hover.png',
+      img: 'assets/img/Property 1=Jon Hover.png',
       liveTest: '',
       gitHub: 'https://github.com/Sanorea/Join'
     },
@@ -68,7 +68,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       aboutTheProject: 'myWork2.text1-Project1',
       TechnologiesIHaveUsed: 'Javascript, HTML, CSS',
       WhatIHaveLearned: 'myWork2.text3-Project1',
-      img: '../../../../assets/img/mafia.png',
+      img: 'assets/img/mafia.png',
       liveTest: 'https://f01602cb@eduard-kammerzel.developerakademie.net/Gangaster-game/index.html',
       gitHub: 'https://github.com/xSportlich/Gangster-Game'
     }
