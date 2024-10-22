@@ -2,18 +2,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, AfterViewInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { TranslateModule,  TranslateService } from "@ngx-translate/core";
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-myconetent',
   standalone: true,
   imports: [
-    FormsModule
+    FormsModule,
+    TranslateModule,
   ],
   templateUrl: './myconetent.component.html',
   styleUrl: './myconetent.component.scss'
 })
-export class MyconetentComponent implements AfterViewInit{
+export class MyconetentComponent implements AfterViewInit {
 
   contactData = {
     name: "",
@@ -34,11 +35,13 @@ export class MyconetentComponent implements AfterViewInit{
     },
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+  }
 
   ngAfterViewInit(): void {
     this.chechBox();
-    this.cangeColor(); 
+    this.cangeColor();
   }
 
   chechBox() {
@@ -56,16 +59,13 @@ export class MyconetentComponent implements AfterViewInit{
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            console.log('send');
             ngForm.resetForm();
           },
           error: (error) => {
-            console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log('send');
       ngForm.resetForm();
     }
   }
@@ -82,7 +82,7 @@ export class MyconetentComponent implements AfterViewInit{
         }
       });
     });
-  
+
     const hiddenElements = document.querySelectorAll('.target4');
     hiddenElements.forEach((el) => observer.observe(el));
   }

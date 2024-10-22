@@ -8,7 +8,7 @@
         "text3-Project1": "I learned a variety of skills. My JavaScript knowledge was tested in combination with Firebase, which gave me a whole new understanding of how programming works. Additionally, I learned to organize myself within a team and take responsibility for deadlines.",
         "ongoing": "Ongoing project",
         "text4": "I am currently working on developing anonline shop for pet foods.This is for me both exciting andchallenging. In my work the key tosuccess lies in a good planning andexecution.",
-        "letstalk": "Let`s Talke"
+        "letstalk": "Let`s Talk"
     },
     "myWork2": {
         "About": "Über das Project",
@@ -25,7 +25,7 @@
     },
     "whyme": {
         "whyme": "Why Me",
-        "text1": "I am motivated to continously learn new technologies and develop myself.My ability to solve comlex problems and my passion for programming make me avalueable member of your team.","technologies": "Technologies I have used",
+        "text1": "I am always motivated to learn new technologies and continuously develop my skills. My ability to tackle complex challenges, combined with my passion for programming, makes me a valuable member of your team.","technologies": "Technologies I have used",
         "iam": "I am",
         "remote": "open to work remote",
         "relocate": "open to relocate",
@@ -33,10 +33,11 @@
     },
     "myskills": {
         "whyme": "My Skills",
-        "text1": "The IT landscape is continously evolving, with new technologies and methodologies.Staying motivated to expand my IT skills requires a stategic approach, a curious mindset, and a commitmentto lifelong learning.",
+        "text1": "The IT industry is evolving rapidly, with new technologies and methodologies constantly emerging. To continuously enhance my IT skills, I rely on a forward-thinking approach, a curious mindset, and a strong commitment to lifelong learning.",
         "text2": "I am always happy to learn new technologies,just tell me what you meed."
     },
     "reference": {
+        "reference" : "Reference",
         "text1": "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague",
         "text2": "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
         "text3": "Michael is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague.",
@@ -44,13 +45,14 @@
         "subline" : "Here what my colleagues said about me"
     },
     "contactme":  {
+        "contactme": "Contact me",
         "input1": "Your name",
         "input2": "Your email",
         "input3": "Your message"
     },
     "letuswork":  {
         "text1": "Let us work together",
-        "text2": "Whether your project involves developing a new application, upgrading existing systems, or implementing robust cybersecurity measures, I have the technical acumen and problem-solving skills to ensure successful outcomes.",
+        "text2": "If you're looking for someone for your next project—whether it's a business app or something else—and you value clean code and a dedicated developer who is eager to grow and learn new things, then I'm the right fit for you.",
         "legalnotice": "Legal notice",
         "privaci": "privacy policy"
     }

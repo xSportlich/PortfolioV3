@@ -31,26 +31,12 @@ export class StartsiteComponent {
 
     this.translate.use(language);
 
-    // if (language == 'en') {
-    //   this.english.classList.add('point');
-    //   console.log('en');
-    // } else {
-    //   this.english.classList.remove('point');
-    // } if (language == 'de') {
-    //   this.german.classList.add('point');
-    //   console.log('en');
-    // } else {
-    //   this.german.classList.remove('point');
-    // }
-
     if (language == 'en') {
       english.classList.add('point');
-      console.log('en');
     } else {
       english.classList.remove('point');
     } if (language == 'de') {
       german.classList.add('point');
-      console.log('en');
     } else {
       german.classList.remove('point');
     }
