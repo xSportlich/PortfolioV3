@@ -15,8 +15,8 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class CommentsComponent implements OnInit, AfterViewInit {
   translatedComments: any[] = [];
-  currentIndex: number = 0; // Track which comment is currently shown
-  transformStyle: string = 'translateX(0)'; // CSS transformation for sliding
+  currentIndex: number = 0;
+  transformStyle: string = 'translateX(0)'; 
 
   constructor(private translate: TranslateService) { }
 
@@ -24,13 +24,13 @@ export class CommentsComponent implements OnInit, AfterViewInit {
     this.translate.onLangChange.subscribe(() => {
       this.translateComments();
     });
-    this.translateComments(); // Load translations on init
+    this.translateComments(); 
   }
 
   ngAfterViewInit() {
     this.translateComments().then(() => {
       setTimeout(() => {
-        this.animationx(); // Delay to ensure DOM elements are fully loaded
+        this.animationx(); 
       }, 0);
     });
   }
@@ -53,20 +53,20 @@ export class CommentsComponent implements OnInit, AfterViewInit {
   comments = [
     {
       text: 'reference.text1',
-      name: 'Rugman',
-      project: 'Project Join',
+      name: 'Brian',
+      project: 'Frontend Devoloper',
       id: 'id1'
     },
     {
       text: 'reference.text2',
-      name: 'Rugman',
-      project: 'Project Join',
+      name: 'Alex',
+      project: 'Frontend Devoloper',
       id: 'id2'
     },
     {
       text: 'reference.text3',
-      name: 'Rugman',
-      project: 'Project Join',
+      name: 'Pati',
+      project: 'Frontend Devoloper',
       id: 'id3'
     },
   ];
@@ -80,7 +80,7 @@ export class CommentsComponent implements OnInit, AfterViewInit {
       return this.translate.get(comment.text).toPromise().then((translatedText: string) => {
         return { ...comment, text: translatedText };
       }).catch(err => {
-        return { ...comment, text: comment.text }; // Fallback to original text if error
+        return { ...comment, text: comment.text };
       });
     });
 

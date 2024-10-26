@@ -1,23 +1,4 @@
 
-
-  <!-- <div *ngFor="let comment of translatedComments; trackBy: trackComment" class="contant hidden">
-    <div id="{{comment.id}}" class="text">{{comment.text}}</div>
-    <div class="line"></div>
-    <div class="person">
-      <span class="name">{{comment.name}}</span>
-      <span class="project">{{comment.project}}</span>
-    </div>
-  </div> -->
-
-  <!-- <div *ngFor="let comment of translatedComments; trackBy: trackComment" class="contant hidden">
-    <div id="{{comment.id}}" class="text">{{comment.text}}</div>
-    <div class="line"></div>
-    <div class="person">
-      <span class="name">{{comment.name}}</span>
-      <span class="project">{{comment.project}}</span>
-    </div>
-  </div> -->
-
   <div class="comments_wrapper">
     <div [style.transform]="transformStyle"  class="comments_slider">
       <div *ngFor="let comment of translatedComments; trackBy: trackComment" class="contant comment hidden">

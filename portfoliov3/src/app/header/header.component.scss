@@ -22,17 +22,6 @@
     >.infos {
         color: #4A4A4A;
         margin-bottom: 160px;
-
-        // >a {
-        //     font-size: 30px;
-        //     text-decoration: none;
-        //     color: #4A4A4A;
-
-        //     &:hover {
-        //         color: white;
-        //     }
-        // }
-
         @include dFlex($js: center, $ai: center, $g: 28px);
         @include vertical();
     }

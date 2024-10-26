@@ -11,13 +11,11 @@
     margin-left: 100px;
     @include dFlex($js: center, $ai: flex-start, $g: 50px);
 
-    // margin-bottom: 160px;
     >.contactme {
       @include vertical();
       font-size: 54px;
       font-weight: 400;
       -webkit-text-stroke: 1px #B5E93B;
-      // margin-top: 150px;
       color: rgba(255, 255, 255, 0);
     }
 
@@ -80,8 +78,6 @@
 }
 
 .checkbox-wrapper-40 label {
-  // display: block;
-  // max-width: 100%;
   margin: 0 auto;
 }
 
@@ -211,7 +207,6 @@ input[type="submit"]:disabled {
 
   .container {
     margin-right: 0px !important;
-    // width: 88% !important;
   }
 
   .contactme {

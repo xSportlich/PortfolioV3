@@ -8,7 +8,6 @@
 
 >.container {
     @include dFlex($js: flex-start, $ai: center, $g: 30px);
-    // width: 1050px;
     margin-left: 100px;
     >.my_skill {
         @include vertical();
@@ -20,7 +19,6 @@
     >.info_content {
         @include dFlex($js:center, $ai:flex-start,$g: 30px);
         flex-direction: column;
-        // height: 100%;
         margin-top: 400px;
         position: relative;
         width: max-content;
@@ -42,10 +40,8 @@
 }
 
 .icons-container {
-    // @include dFlex($js:center,$ai:center,$g:0);
     width: 730px;
     flex-wrap: wrap;
-    // height: 100px;
     display: flex;
     gap: 60px;
 }

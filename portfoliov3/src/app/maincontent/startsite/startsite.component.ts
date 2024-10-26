@@ -14,10 +14,6 @@ import { HeaderComponent } from '../../header/header.component';
 })
 export class StartsiteComponent {
 
-  //  english: any = document.getElementById('english');
-  //  german: any = document.getElementById('german');
-
-
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('en');
   }

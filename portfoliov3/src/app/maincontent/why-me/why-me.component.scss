@@ -1,7 +1,6 @@
 @import '../../../styles.scss';
 
 .content {
-    // width: 65vw;
     height: 104vh;
     background-image: linear-gradient(to right, rgb(22, 22, 22), rgb(12, 12, 12));
     @include dFlex($js: flex-start, $ai: center, $g: 0);
@@ -23,7 +22,6 @@
     }
 
     >a {
-        // position: absolute;
         margin-top: 1015px;
         margin-left: 80px;
 
@@ -203,10 +201,6 @@
         gap: 30px;
         width: 100%;
         padding: 30px;
-        a {
-            // margin-top: 0;
-            // margin-left: 0 ;
-        }
 
         >.arrow {
             display: none;
@@ -237,9 +231,6 @@
     }
     .img_animation-remote {
         margin-right: 18px;
-    }
-    .container {
-        // align-items: center;
     }
     .btn {
         margin-left: 0px !important;

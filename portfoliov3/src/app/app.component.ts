@@ -24,16 +24,14 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class AppComponent implements AfterViewInit{
   title = 'portfoliov3';
-  // title = 'portfolio';
 
 
   ngAfterViewInit(): void {
     const bodyElement = document.getElementById("scroll");
-    let isScrolling: boolean | number = false; // Variable zur Steuerung der Scroll-Animation
+    let isScrolling: boolean | number = false; 
 
     if (bodyElement) {
       bodyElement.addEventListener("wheel", function (e: WheelEvent) {
-        // Verhindert mehrfaches Scrollen während einer laufenden Animation
         if (isScrolling) {
           return;
         }
@@ -46,10 +44,9 @@ export class AppComponent implements AfterViewInit{
           bodyElement.scrollBy({ left: -520, behavior: 'smooth' });
         }
 
-        // Setze isScrolling nach 500ms wieder auf false (nachdem die Animation abgeschlossen ist)
         setTimeout(() => {
           isScrolling = false;
-        }, 200);  // Dauer, die zur Vermeidung von Ruckeln reicht
+        }, 200);  
       }, { passive: false });
     }
   }
