@@ -26,4 +26,5 @@ export class HeaderComponent {
   switchLanguegs(language: string) {
     this.translate.use(language);
   }
+
 }

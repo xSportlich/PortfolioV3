@@ -4,20 +4,24 @@
         <div class="fomular">
             <form (ngSubmit)='onSubmit(contactForm)' #contactForm="ngForm" class="form">
 
-                <input #name="ngModel" [(ngModel)]="contactData.name" minlength="4" name="name" type="text" id="name" placeholder="Your name" required>
+                <input #name="ngModel" [(ngModel)]="contactData.name" minlength="4" name="name" type="text" id="name"
+                    placeholder="Your name" required>
+                @if(!name.valid && name.touched && !name.disabled) {
+                <span class="warn_text">Please enter a name</span>
+                }
 
-                <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" id="email" placeholder="Your e-mail" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" id="email"
+                    placeholder="Your e-mail" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="text" minlength="4" type="message" id="message" placeholder="Youre message" required></textarea>
+                @if(!email.valid && email.touched && !email.disabled) {
+                <span class="warn_text">Please enter a email</span>
+                }
+
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="text" minlength="4" type="message"
+                    id="message" placeholder="Youre message" required></textarea>
 
                 @if(!message.valid && message.touched && !message.disabled) {
-                    <span class="warn_text">Please enter a message</span>
-                }
-                @if(!name.valid && name.touched && !name.disabled) {
-                    <span class="warn_text">Please enter a name</span>
-                }
-                @if(!email.valid && email.touched && !email.disabled) {
-                    <span class="warn_text">Please enter a email</span>
+                <span class="warn_text">Please enter a message</span>
                 }
 
                 <div class="privacy_policy">
@@ -25,7 +29,8 @@
                         <input id="check" type="checkbox" />
                         <span class="checkbox"></span>
                     </div>
-                    <span class="policy_text" aria-labelledby="check" aria-required="true">I've raed the <a href="policy">privacy policy </a>and agree to the processing of my data as outlined.</span>
+                    <span class="policy_text" aria-labelledby="check" aria-required="true">I've raed the <a
+                            href="policy">privacy policy </a>and agree to the processing of my data as outlined.</span>
                 </div>
                 <input id="submit" class="submit" type="submit" value="Send" disabled>
             </form>
@@ -33,7 +38,8 @@
         <a href="#start"><img class="arrow" src="assets/img/Arrow to switch the sections.png" alt=""></a>
         <div class="social-medias">
             <a href="mailto:likeaedu@mail.com"><img src="assets/img/Vector.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/eduard-kammerzel-877b77206/" target="_blank"><img src="assets/img/Vector2.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/eduard-kammerzel-877b77206/" target="_blank"><img
+                    src="assets/img/Vector2.png" alt=""></a>
             <a href="https://github.com/xSportlich" target="_blank"><img src="assets/img/Vector3.png" alt=""></a>
         </div>
     </div>

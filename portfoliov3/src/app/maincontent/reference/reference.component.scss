@@ -9,7 +9,7 @@
     >.contant {
         @include dFlex($js: center, $ai: flex-end, $g: 40px);
         margin-bottom: 130px;
-        margin-left: 100px;
+        margin-left: 175px;
 
         >.reference {
             @include vertical();
@@ -230,6 +230,7 @@
     }
 }
 
+
 @media (max-width: 450px) {
     .page {
         margin-left: 150px !important;
@@ -251,9 +252,17 @@
         font-size: 32px !important;
     }
 }
+@media (max-width: 380px) {
+    .page {
+        margin-left: 92px !important;
+    }
+}
 
 @media (max-width: 320px) {
     .reference {
         font-size: 32px !important;
+    }
+    .page {
+        margin-left: 92px !important;
     }
 }

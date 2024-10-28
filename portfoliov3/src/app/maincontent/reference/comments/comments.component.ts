@@ -16,7 +16,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class CommentsComponent implements OnInit, AfterViewInit {
   translatedComments: any[] = [];
   currentIndex: number = 0;
-  transformStyle: string = 'translateX(0)'; 
+  transformStyle: string = 'translateX(0)';
 
   constructor(private translate: TranslateService) { }
 
@@ -24,13 +24,13 @@ export class CommentsComponent implements OnInit, AfterViewInit {
     this.translate.onLangChange.subscribe(() => {
       this.translateComments();
     });
-    this.translateComments(); 
+    this.translateComments();
   }
 
   ngAfterViewInit() {
     this.translateComments().then(() => {
       setTimeout(() => {
-        this.animationx(); 
+        this.animationx();
       }, 0);
     });
   }
@@ -90,19 +90,26 @@ export class CommentsComponent implements OnInit, AfterViewInit {
   }
 
   slideToComment(index: number) {
-    if (window.matchMedia("(max-width: 375px)").matches) {
+    if (window.matchMedia("(max-width: 320px)").matches) {
       this.currentIndex = index;
-      this.transformStyle = `translateX(-${index * 76}%)`; 
-      
-    } else if (window.matchMedia("(max-width: 450px)").matches) {
-        this.currentIndex = index;
-        this.transformStyle = `translateX(-${index * 85}%)`; 
-        
-      } else {
+      this.transformStyle = `translateX(-${index * 56}%)`;
+
+    } else if (window.matchMedia("(max-width: 375px)").matches) {
       this.currentIndex = index;
-      this.transformStyle = `translateX(-${index * 100}%)`; 
+      this.transformStyle = `translateX(-${index * 76}%)`;
+
+    }
+    else if (window.matchMedia("(max-width: 450px)").matches) {
+      this.currentIndex = index;
+      this.transformStyle = `translateX(-${index * 85}%)`;
+
+    } else {
+      this.currentIndex = index;
+      this.transformStyle = `translateX(-${index * 100}%)`;
     }
   }
+
+
 }
 
 

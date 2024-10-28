@@ -8,7 +8,7 @@
 
 >.container {
     @include dFlex($js: flex-start, $ai: center, $g: 30px);
-    margin-left: 100px;
+    margin-left: 175px;
     >.my_skill {
         @include vertical();
         font-size: 54px;
@@ -40,7 +40,7 @@
 }
 
 .icons-container {
-    width: 730px;
+    width: 760px;
     flex-wrap: wrap;
     display: flex;
     gap: 60px;
@@ -64,6 +64,7 @@
     }
     .container {
         width: 100%;
+        margin-top: 100px;
         margin-left: 0px !important;
         flex-direction: column;
         padding: 30px;
