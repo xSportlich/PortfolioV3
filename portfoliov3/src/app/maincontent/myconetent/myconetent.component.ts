@@ -22,10 +22,10 @@ export class MyconetentComponent implements AfterViewInit {
     message: ""
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'http://f016f311@eduard-kammerzel.de//sendMail.php',
+    endPoint: 'http://f016f311@eduard-kammerzel.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
