@@ -59,7 +59,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       TechnologiesIHaveUsed: 'Javascript, HTML, CSS, Firebase, GIT',
       WhatIHaveLearned: 'myWork.text3-Project1',
       img: 'assets/img/Property 1=Jon Hover.png',
-      liveTest: '',
+      liveTest: 'http://eduard-kammerzel.de/Join2/',
       gitHub: 'https://github.com/Sanorea/Join'
     },
     {
@@ -69,7 +69,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       TechnologiesIHaveUsed: 'Javascript, HTML, CSS',
       WhatIHaveLearned: 'myWork2.text3-Project1',
       img: 'assets/img/mafia.png',
-      liveTest: 'https://f01602cb@eduard-kammerzel.developerakademie.net/Gangaster-game/index.html',
+      liveTest: 'http://f016f311@eduard-kammerzel.de/Gangaster-game/index.html',
       gitHub: 'https://github.com/xSportlich/Gangster-Game'
     }
   ];
