@@ -63,7 +63,7 @@ export class MyconetentComponent implements AfterViewInit {
           },
           error: (error) => {
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info(),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
