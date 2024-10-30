@@ -5,6 +5,7 @@
     width: 100vw;
     background-image: linear-gradient(to left, rgb(22, 22, 22), rgb(0, 0, 0));
     color: white;
+    margin-right: -3px;
 
     >.top {
         padding-top: 40px;
@@ -167,6 +168,7 @@
 }
 
 @media (max-width: 730px) {
+
     .name {
         font-size: 60px !important;
     }
@@ -176,8 +178,12 @@
     }
 
     .content {
-        margin-top: 50px;
-        height: 75vh !important;
+        margin-top: 75px;
+        height: 85vh !important;
+    }
+
+    .mid {
+        width: 100%;
     }
 }
 
@@ -195,6 +201,9 @@
     .name {
         font-size: 45px !important;
     }
+    .content {
+        height: 75vh !important;
+    }
 
     .me-img {
         height: 390px !important;
@@ -211,6 +220,13 @@
         height: 390px;
     }
 
+    .content {
+        height: 75vh !important;
+    }
+
+    .name {
+        font-size: 42px !important;
+    }
     
 }
 

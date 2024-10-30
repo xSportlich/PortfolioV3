@@ -2,13 +2,13 @@
 
 .container {
     height: 100%;
-    width: 100%;
+    width: 101%;
     background-image: linear-gradient(to left, rgb(14, 13, 13), rgb(14, 13, 13), rgb(14, 13, 13));
-    @include dFlex($js: center, $ai: flex-end, $g: 0);
+    @include dFlex($js: center, $ai: center, $g: 0);
 
     >.contant {
         @include dFlex($js: center, $ai: flex-end, $g: 40px);
-        margin-bottom: 130px;
+        // margin-bottom: 130px;
         margin-left: 175px;
 
         >.reference {
@@ -30,6 +30,7 @@
 .arrow {
     margin-bottom: 400px;
     margin-left: 100px;
+    margin-right: 5px;
 
     &:hover {
         filter: drop-shadow(0px 0px 5px #B5E93B);
@@ -217,35 +218,40 @@
 
 @media (max-width: 510px) {
     .contant {
+        width: 90% !important;
+        // padding: 20px !important;
+        align-items: center !important;
+    }
+
+    .comments_container {
         width: 100% !important;
-        padding: 20px !important;
     }
 
     .container {
-        padding: 20px !important;
+        // padding: 20px !important;
     }
 
     .page {
-        margin-left: 175px !important;
+        margin-left: 0px !important;
     }
 }
 
 
 @media (max-width: 450px) {
     .page {
-        margin-left: 150px !important;
+        // margin-left: 150px !important;
     }
 }
 
 @media (max-width: 420px) {
     .page {
-        margin-left: 137px !important;
+        // margin-left: 137px !important;
     }
 }
 
 @media (max-width: 390px) {
     .contant {
-        width: 100% !important;
+        width: 90% !important;
     }
 
     .reference {
@@ -254,7 +260,7 @@
 }
 @media (max-width: 380px) {
     .page {
-        margin-left: 92px !important;
+        // margin-left: 92px !important;
     }
 }
 
@@ -263,6 +269,6 @@
         font-size: 32px !important;
     }
     .page {
-        margin-left: 92px !important;
+        // margin-left: 92px !important;
     }
 }

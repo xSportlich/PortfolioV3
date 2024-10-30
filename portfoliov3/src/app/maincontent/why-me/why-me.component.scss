@@ -4,6 +4,7 @@
     height: 104vh;
     background-image: linear-gradient(to right, rgb(22, 22, 22), rgb(12, 12, 12));
     @include dFlex($js: flex-start, $ai: center, $g: 0);
+    width: 101%;
 }
 
 .container {

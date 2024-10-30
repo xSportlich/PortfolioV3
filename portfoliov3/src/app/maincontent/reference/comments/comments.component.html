@@ -1,6 +1,6 @@
 
   <div class="comments_wrapper">
-    <div [style.transform]="transformStyle"  class="comments_slider">
+    <div [style.transform]="transformStyle"  class="comments_slider gap">
       <div *ngFor="let comment of translatedComments; trackBy: trackComment" class="contant comment hidden">
         <div id="{{comment.id}}" class="text">{{comment.text}}</div>
         <div class="line"></div>

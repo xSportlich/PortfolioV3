@@ -2,7 +2,7 @@
 
 .container {
   height: 100%;
-  width: 100%;
+  width: 101%;
   background-image: linear-gradient(to left, rgb(14, 13, 13), rgb(14, 13, 13), rgb(14, 13, 13));
   @include dFlex($js: center, $ai: center, $g: 0);
   margin-right: 50px;
@@ -194,7 +194,8 @@ input[type="submit"]:disabled {
 .warn_text {
   color: red;
   font-size: 14px;
-  margin-right: 250px;
+  // margin-right: 250px;
+  width: 100%;
 }
 
 @media (max-width: 900px) {

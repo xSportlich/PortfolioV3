@@ -2,20 +2,26 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    TranslateModule
+  ],
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'] 
+  styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
   isImprintPage = false;
   isPolicyPage = false;
   isScreenSmall = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+  }
 
   ngOnInit() {
     this.router.events.subscribe(event => {

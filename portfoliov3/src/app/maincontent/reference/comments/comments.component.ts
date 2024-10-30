@@ -92,20 +92,27 @@ export class CommentsComponent implements OnInit, AfterViewInit {
   slideToComment(index: number) {
     if (window.matchMedia("(max-width: 320px)").matches) {
       this.currentIndex = index;
-      this.transformStyle = `translateX(-${index * 56}%)`;
+      this.transformStyle = `translateX(-${index * 112}%)`;
 
     } else if (window.matchMedia("(max-width: 375px)").matches) {
       this.currentIndex = index;
-      this.transformStyle = `translateX(-${index * 76}%)`;
+      this.transformStyle = `translateX(-${index * 109}%)`;
 
-    }
+    } else if (window.matchMedia("(max-width: 430px)").matches) {
+      this.currentIndex = index;
+      this.transformStyle = `translateX(-${index * 108}%)`;
+    } 
     else if (window.matchMedia("(max-width: 450px)").matches) {
       this.currentIndex = index;
       this.transformStyle = `translateX(-${index * 85}%)`;
 
-    } else {
+    } else if (window.matchMedia("(max-width: 490px)").matches) {
       this.currentIndex = index;
-      this.transformStyle = `translateX(-${index * 100}%)`;
+      this.transformStyle = `translateX(-${index * 108}%)`;
+    } 
+    else {
+      this.currentIndex = index;
+      this.transformStyle = `translateX(-${index * 108}%)`;
     }
   }
 
