@@ -73,3 +73,10 @@
         color: $prime;
     }
 }
+
+@media (max-width: 900px) {
+    .content {
+        margin-left: 0px;
+        text-align: center;
+    }
+}
