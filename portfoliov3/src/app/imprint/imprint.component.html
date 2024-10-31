@@ -1,17 +1,17 @@
 <div class="imprint_container fontQuantico">
     <div class="content">
         <div class="langueges">
-            <a href="">DE</a>
+            <a id="german" (click)="switchLanguegs('de')">DE</a>
             <div class="space-content"></div>
-            <a href="">EN</a>
+            <a id="english" class="point" (click)="switchLanguegs('en')">EN</a>
         </div>
-        <span class="imprint">Imprint</span>
+        <span class="imprint">{{'imprint.text1' | translate}}</span>
         <div class="adress">
             <span>Eduard Kammerzel</span>
             <span>Im Angel 13 </span>
             <span>55239 Gau-Odernheim</span>
         </div>
-        <span class="contact">Contact</span>
+        <span class="contact">{{'imprint.text2' | translate}}</span>
         <div class="infos">
             <span class="tele">0176 30666782</span>
             <span class="email">likeaedu&#64;gmail.com</span>

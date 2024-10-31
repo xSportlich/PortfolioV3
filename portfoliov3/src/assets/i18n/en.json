@@ -55,6 +55,66 @@
         "text2": "If you're looking for someone for your next project—whether it's a business app or something else—and you value clean code and a dedicated developer who is eager to grow and learn new things, then I'm the right fit for you.",
         "legalnotice": "Legal notice",
         "privaci": "Privacy policy"
-    }
+    },
+    "imprint":  {
+        "text1": "Imprint",
+        "text2": "Contact"
+    },
+        "privacy_policy": {
+          "title": "Privacy Policy",
+          "overview": {
+            "title": "1. Privacy at a Glance",
+            "general": {
+              "title": "General Information",
+              "content": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data by which you can be personally identified. Detailed information on data protection can be found in our Privacy Policy below."
+            },
+            "data_collection": {
+              "title": "Data Collection on this Website",
+              "responsible": {
+                "title": "Who is responsible for data collection on this website?",
+                "content": "The data processing on this website is carried out by the website operator. You can find their contact details in the section 'Notice concerning the responsible party' in this Privacy Policy."
+              },
+              "how": {
+                "title": "How do we collect your data?",
+                "content": "Your data is collected, firstly, when you provide it to us. This may be data that you enter into a contact form, for example. Other data is collected automatically or with your consent when you visit the website by our IT systems. This mainly includes technical data (e.g., internet browser, operating system, or time of the page visit). This data is collected automatically as soon as you enter this website."
+              },
+              "usage": {
+                "title": "What do we use your data for?",
+                "content": "Part of the data is collected to ensure the website is provided without errors. Other data may be used to analyze your user behavior."
+              },
+              "rights": {
+                "title": "What rights do you have regarding your data?",
+                "content": "You have the right at any time to obtain information free of charge about the origin, recipient, and purpose of your stored personal data. You also have the right to request correction or deletion of this data. If you have given your consent to data processing, you can revoke this consent at any time for the future. Additionally, you have the right to request the restriction of the processing of your personal data under certain circumstances. Furthermore, you have the right to lodge a complaint with the relevant supervisory authority. For further questions regarding data protection, you can contact us at any time."
+              },
+              "tools": {
+                "title": "Analysis Tools and Third-Party Tools",
+                "content": "When you visit this website, your browsing behavior may be statistically evaluated. This is mainly done with so-called analytics programs. Detailed information on these analytics programs can be found in the following Privacy Policy."
+              }
+            }
+          },
+          "hosting": {
+            "title": "2. Hosting",
+            "provider": {
+              "title": "We host our website content with the following provider:",
+              "details": "Provider is ALL-INKL.COM - Neue Medien Münnich, owned by René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). You can find more details in All-Inkl's Privacy Policy: https://all-inkl.com/datenschutzinformationen/."
+            },
+            "legal_basis": {
+              "title": "The use of All-Inkl is based on Article 6(1)(f) GDPR.",
+              "content": "We have a legitimate interest in ensuring the most reliable presentation of our website. If appropriate consent has been requested, processing takes place exclusively on the basis of Article 6(1)(a) GDPR and § 25(1) TDDDG, insofar as the consent includes the storage of cookies or access to information in the user’s end device (e.g., device fingerprinting) within the meaning of the TDDDG. Consent can be revoked at any time."
+            }
+          },
+          "general_info": {
+            "title": "3. General Information and Mandatory Information",
+            "data_protection": {
+              "title": "Data Protection",
+              "content": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this Privacy Policy. When you use this website, various personal data are collected. Personal data is any data by which you can be personally identified. This Privacy Policy explains what data we collect and what we use it for. It also explains how and for what purpose this occurs. We point out that data transmission on the internet (e.g., communication by email) can have security gaps. Complete protection of data from access by third parties is not possible."
+            },
+            "responsible": {
+              "title": "Notice Concerning the Responsible Party",
+              "content": "The responsible party for data processing on this website is: Eduard Kammerzel, 55239 Gau-Odernheim Im Angel 13, Phone: +49 176 30666782, Email: likeaedu@gmail.com."
+            }
+          }
+        }
+      
 
 }
