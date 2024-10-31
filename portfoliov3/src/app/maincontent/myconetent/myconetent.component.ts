@@ -88,21 +88,24 @@ export class MyconetentComponent implements AfterViewInit {
   }
 
   sendFeedback() {
-    let name: any = document.getElementById('name');
-    let email: any = document.getElementById('email');
-    let message: any = document.getElementById('message');
-    let chechBox: any = document.getElementById('check');
-    let btn: any = document.getElementById('submit');
 
-    if (message.value != "" && name.value != "" && email.value != "" && email.value.includes('@')) {
-      let contant = document.getElementById('feedback');
-      contant?.classList.remove('d-none');
-      setTimeout(() => {
-        contant?.classList.add('d-none');
-      }, 1500);
-      chechBox.checked = false;
-      btn.disabled = true;
-    }
+    setTimeout(() =>  {
+      let name: any = document.getElementById('name');
+      let email: any = document.getElementById('email');
+      let message: any = document.getElementById('message');
+      let chechBox: any = document.getElementById('check');
+      let btn: any = document.getElementById('submit');
+  
+      if (message.value != "" && name.value != "" && email.value != "" && email.value.includes('@')) {
+        let contant = document.getElementById('feedback');
+        contant?.classList.remove('d-none');
+        setTimeout(() => {
+          contant?.classList.add('d-none');
+        }, 1500);
+        chechBox.checked = false;
+        btn.disabled = true;
+      }
+    }, 1000)
 
   }
 
