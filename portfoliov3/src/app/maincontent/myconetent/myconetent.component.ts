@@ -68,6 +68,21 @@ export class MyconetentComponent implements AfterViewInit {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }
+    let name: any = document.getElementById('name');
+      let email: any = document.getElementById('email');
+      let message: any = document.getElementById('message');
+      let chechBox: any = document.getElementById('check');
+      let btn: any = document.getElementById('submit');
+  
+      if (message.value != "" && name.value != "" && email.value != "" && email.value.includes('@')) {
+        let contant = document.getElementById('feedback');
+        contant?.classList.remove('d-none');
+        setTimeout(() => {
+          contant?.classList.add('d-none');
+        }, 1500);
+        chechBox.checked = false;
+        btn.disabled = true;
+      }
   }
 
 
@@ -87,27 +102,6 @@ export class MyconetentComponent implements AfterViewInit {
     hiddenElements.forEach((el) => observer.observe(el));
   }
 
-  sendFeedback() {
-
-    setTimeout(() =>  {
-      let name: any = document.getElementById('name');
-      let email: any = document.getElementById('email');
-      let message: any = document.getElementById('message');
-      let chechBox: any = document.getElementById('check');
-      let btn: any = document.getElementById('submit');
-  
-      if (message.value != "" && name.value != "" && email.value != "" && email.value.includes('@')) {
-        let contant = document.getElementById('feedback');
-        contant?.classList.remove('d-none');
-        setTimeout(() => {
-          contant?.classList.add('d-none');
-        }, 1500);
-        chechBox.checked = false;
-        btn.disabled = true;
-      }
-    }, 1000)
-
-  }
 
 
 }
