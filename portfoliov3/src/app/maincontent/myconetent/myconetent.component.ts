@@ -86,5 +86,26 @@ export class MyconetentComponent implements AfterViewInit {
     const hiddenElements = document.querySelectorAll('.target4');
     hiddenElements.forEach((el) => observer.observe(el));
   }
+
+  sendFeedback() {
+let name: any = document.getElementById('name');
+let email: any = document.getElementById('email');
+let message: any = document.getElementById('message');
+let chechBox: any = document.getElementById('check');
+let btn: any = document.getElementById('submit');
+
+    if(message.value != "" && name.value != "" && email.value != "") {
+      let contant = document.getElementById('feedback');
+      contant?.classList.remove('d-none');
+      setTimeout(() => {
+        contant?.classList.add('d-none');
+      }, 1400);
+    }
+    chechBox.checked = false;
+    btn.disabled = true;
+
+  }
+
+
 }
 

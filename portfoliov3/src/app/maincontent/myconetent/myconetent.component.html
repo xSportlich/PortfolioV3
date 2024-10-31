@@ -2,6 +2,13 @@
     <div class="contant">
         <span class="contactme target4">{{'contactme.contactme' | translate}}</span>
         <div class="fomular">
+            <div id="feedback" class="feedback d-none">
+                <div class="wrapper"> <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                </div>
+            </div>
             <form (ngSubmit)='onSubmit(contactForm)' #contactForm="ngForm" class="form">
 
                 <input #name="ngModel" [(ngModel)]="contactData.name" minlength="4" name="name" type="text" id="name"
@@ -32,7 +39,7 @@
                     <span class="policy_text" aria-labelledby="check" aria-required="true">I've raed the <a
                             href="policy">privacy policy </a>and agree to the processing of my data as outlined.</span>
                 </div>
-                <input id="submit" class="submit" type="submit" value="Send" disabled>
+                <input id="submit" (click)="sendFeedback()" class="submit" type="submit" value="Send" disabled>
             </form>
         </div>
         <a href="#start"><img class="arrow" src="assets/img/Arrow to switch the sections.png" alt=""></a>
