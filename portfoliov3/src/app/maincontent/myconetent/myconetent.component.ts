@@ -99,10 +99,10 @@ export class MyconetentComponent implements AfterViewInit {
       contant?.classList.remove('d-none');
       setTimeout(() => {
         contant?.classList.add('d-none');
-      }, 1400);
+      }, 1500);
+      chechBox.checked = false;
+      btn.disabled = true;
     }
-    chechBox.checked = false;
-    btn.disabled = true;
 
   }
 
