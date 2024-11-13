@@ -84,6 +84,12 @@
     height: 15px;
 }
 
+@media (max-height: 850px) {
+    .title {
+        margin-top: 180px !important;
+    }
+}
+
 @keyframes appear {
     from {
         opacity: 0;

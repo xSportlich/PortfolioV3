@@ -4,18 +4,18 @@
         "About": "About the project",
         "text1-Project1": "Task manager inspired by the Kanban System. Create and Organize tasks using drag and drop functions, assign users and categories.",
         "technologies": "Technologies I have used",
-        "learned": "What i have learned",
+        "learned": "What I have learned",
         "text3-Project1": "I learned a variety of skills. My JavaScript knowledge was tested in combination with Firebase, which gave me a whole new understanding of how programming works. Additionally, I learned to organize myself within a team and take responsibility for deadlines.",
         "ongoing": "Ongoing project",
-        "text4": "I am currently working on developing anonline shop for pet foods.This is for me both exciting andchallenging. In my work the key tosuccess lies in a good planning andexecution.",
+        "text4": "I am currently working on developing an online shop for pet foods. For me this is both exciting and challenging. In my work the key to success lies in good planning and execution.",
         "letstalk": "Let`s Talk"
     },
     "myWork2": {
         "About": "Über das Project",
         "text1-Project1": "Mafia 5 is a Jump, Run and Shoot Game. Help Fernando find and eliminate the criminal San Davis.",
         "technologies": "Technologies I have used",
-        "learned": "What i have learned",
-        "text3-Project1": "The focus in Mafia 5 is Object-oriented with class-based programming to to develop a well-designed game with complex tasks such as collision detection."
+        "learned": "What I have learned",
+        "text3-Project1": "The focus in Mafia 5 is Object-oriented with class-based programming to develop a well-designed game with complex tasks such as collision detection."
     },
     "header": {
         "contact": "Contact",

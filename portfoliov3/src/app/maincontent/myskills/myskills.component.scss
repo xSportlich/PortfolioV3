@@ -4,37 +4,41 @@
     width: 101%;
     height: 104vh;
     background-image: linear-gradient(to left, rgb(14, 13, 13), rgb(12, 12, 12));
-    @include dFlex($js:center,$ai:center,$g:0);
+    @include dFlex($js: center, $ai: center, $g: 0);
 
->.container {
-    @include dFlex($js: flex-start, $ai: center, $g: 30px);
-    margin-left: 175px;
-    >.my_skill {
-        @include vertical();
-        font-size: 54px;
-        font-weight: 400;
-        -webkit-text-stroke: 1px #B5E93B;
-        margin-top: 385px;
-    }
-    >.info_content {
-        @include dFlex($js:center, $ai:flex-start,$g: 30px);
-        flex-direction: column;
-        margin-top: 400px;
-        position: relative;
-        width: max-content;
-        >.text {
-            color: white;
-            font-size: 18px;
-            width: 900px;
+    >.container {
+        @include dFlex($js: flex-start, $ai: center, $g: 30px);
+        margin-left: 175px;
+
+        >.my_skill {
+            @include vertical();
+            font-size: 54px;
+            font-weight: 400;
+            -webkit-text-stroke: 1px #B5E93B;
+            margin-top: 385px;
+        }
+
+        >.info_content {
+            @include dFlex($js: center, $ai: flex-start, $g: 30px);
+            flex-direction: column;
+            margin-top: 400px;
+            position: relative;
+            width: max-content;
+
+            >.text {
+                color: white;
+                font-size: 18px;
+                width: 900px;
+            }
         }
     }
-}
 }
 
 .arrow {
     margin-bottom: 300px;
     margin-left: 120px;
     margin-right: 8px;
+
     &:hover {
         filter: drop-shadow(0px 0px 5px #B5E93B);
     }
@@ -56,6 +60,17 @@
     width: 230px;
 }
 
+@media (max-height: 850px) {
+    .content {
+
+        >.container {
+            >.info_content {
+                margin-top: 250px;
+            }
+        }
+    }
+}
+
 @media (max-width: 900px) {
 
     .content {
@@ -63,6 +78,7 @@
         height: 0%;
         width: 100%;
     }
+
     .container {
         width: 100%;
         margin-top: 100px;
@@ -71,24 +87,30 @@
         padding: 30px;
         align-items: start !important;
     }
+
     .info_content {
         margin-top: 0px !important;
         width: 100% !important;
+
         >.text {
             width: 100% !important;
         }
     }
+
     .my_skill {
         margin-top: 0px !important;
         writing-mode: horizontal-tb !important;
         transform: none !important;
     }
+
     .icons-container {
         width: 100%;
     }
+
     .arrow {
         display: none;
     }
+
     .extra_text {
         position: relative;
         right: 0px;
@@ -100,19 +122,22 @@
 @media (max-width: 320px) {
     .container {
         margin-top: 50px
-    }  
+    }
 }
 
 @media (max-width: 390px) {
     .icons-container {
         justify-content: center;
-    } 
+    }
+
     .my_skill {
         font-size: 32px !important;
     }
+
     .text {
         font-size: 16px !important;
     }
+
     .extra_text {
         font-size: 16px !important;
     }

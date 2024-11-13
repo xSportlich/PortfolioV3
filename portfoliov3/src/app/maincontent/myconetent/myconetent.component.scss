@@ -198,6 +198,12 @@ input[type="submit"]:disabled {
   width: 100%;
 }
 
+@media (max-height: 850px) {
+  #message {
+     height: 180px !important;
+  }
+}
+
 @media (max-width: 900px) {
   .contant {
     flex-direction: column;

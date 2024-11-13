@@ -64,6 +64,12 @@ text {
     display: none;
 }
 
+@media (max-height: 850px) {
+    .header-content {
+        height: 116vh;
+    }
+}
+
 @media (max-width: 900px) {
     .header-content {
         width: 100%;

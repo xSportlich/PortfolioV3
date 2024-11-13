@@ -184,6 +184,15 @@
     z-index: 1;
 }
 
+@media (max-height: 850px) {
+    .container {
+        margin-bottom: 170px !important;
+        >a {
+            margin-top: 570px !important;
+        }
+    }
+}
+
 @media (max-width: 900px) {
     .content {
         height: 100%;

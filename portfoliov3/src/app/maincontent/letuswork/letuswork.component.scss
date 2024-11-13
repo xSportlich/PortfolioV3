@@ -110,6 +110,14 @@
     }
 }
 
+@media (max-height: 850px) {
+    .container {
+       >.contant {
+        gap: 110px !important;
+       }
+    }
+  }
+
 @media (max-width: 900px) {
     .contactme {
         display: flex;

@@ -51,6 +51,16 @@
   gap: 30px;
 }
 
+@media (max-height: 850px) {
+  .contant {
+      width: 535px !important;
+      height: 140px !important;
+      >.text {
+        width: 325px !important;
+      }
+  }
+}
+
 @media (max-width: 900px) {
   .comments_wrapper {
     width: 100%;
